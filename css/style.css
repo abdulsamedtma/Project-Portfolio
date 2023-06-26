@@ -1,0 +1,238 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* using variable to set color text color */
+:root {
+    --white: #fff;
+}
+
+/*background*/
+body {
+    /*background-color is very dark gray (mostly dark)*/
+
+    background-color: #0c1634;
+    /*background-color*/
+    color: var(--white);
+    /* Text color is white*/
+    background-image: url(./images/Displayphoto.png);
+    /*background Image*/
+    background-position: center;
+    /*photo position set to the center */
+    background-size: cover;
+    /* set to cover the page */
+    background-repeat: no-repeat;
+    /* background set to no repeat */
+    height: 100vh;
+    /*  Vie height set to 100vh */
+
+
+}
+
+/*header*/
+header {
+    padding: 20px;
+    /*padding is 20px for the header*/
+    font-family: 'poppins', sans-serif;
+    /*The list of preferred font for the header*/
+    width: 100%;
+    /*width is 100% for the element within the header */
+    display: flex;
+    /* Display element withing the header to flex*/
+    justify-content: space-between;
+    /* space in between element witihin this tag*/
+    align-items: normal;
+    /* Element withing this tage should be aligned normal*/
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+/*header h1 tag */
+header h1 {
+    margin: 10px;
+    /*Margin set at 10px for element within the tag */
+    font-size: 48px;
+    /* font size for element within the tag set at 48px */
+    position: relative;
+}
+
+/* Photo class */
+.photo {
+    width: 200px;
+    /* Width for the image within the set */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+/* nav elements styling */
+nav {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* nav ul li elements styling */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+/* nav ul li a tag elements styling */
+nav ul li a {
+    color: var(--white);
+    /* font color set to white */
+    text-decoration: none;
+    /* text decoration set to none */
+    font-size: 18px;
+    /* font size of the text set to 18px */
+    position: relative;
+    /* text positon set relative */
+}
+
+/* nav ul li a tag nav elements styling when you move your cursor to the element a red line appears under it */
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.welcomeText {
+    margin-bottom: 20px;
+}
+
+/* welcomeText p tag section Styling */
+.welcomeText p {
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: auto;
+    font-size: 30px;
+    justify-content: center;
+}
+
+/* Welcome Text a tag Styling */
+.welcomeText a {
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.red {
+    color: #ff004f;
+}
+
+/*-----------About Me------------*/
+#aboutMe {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*Grouping all elements within #aboutMe p, #contact p, #portfolio p, #resume  and styling all together*/
+#aboutMe p,
+#contact p,
+#portfolio p,
+#resume {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ffff00;
+
+}
+
+#work {
+    width: 300px;
+    height: 350px;
+    border: 5px solid #ff004f;
+    padding: 10px;
+
+}
+
+#work a:hover {
+    width: 175px;
+    height: 150px;
+
+
+}
+
+.project-1 {
+    width: 200px;
+    height: 200px;
+
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    margin-bottom: 20px;
+
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.Social a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling Footer Elements */
+footer,
+footer h2 {
+    padding: 30px;
+    /* padding for elements within the footer and footer h2 tags set at 30px */
+    clear: both;
+    font-family: 'poppins', sans-serif;
+    /* The list of preferred font for all elements within foorter and footer h2 tags */
+    text-align: center;
+    /* Text align for element the footer and footer h2 tags is set in the center*/
+    font-size: 20px;
+    /* Font sixe set is 20px for all element withing the footer  and footer h2 tags */
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {}
+
+nav {
+    flex-direction: column;
+}
