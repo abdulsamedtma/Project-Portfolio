@@ -165,54 +165,46 @@ nav ul li a:hover::after {
     color: #ffff00;
 
 }
-
+/* Styling elements within the id work */
 #work {
     width: 300px;
     height: 350px;
     border: 5px solid #ff004f;
     padding: 10px;
-
 }
-
+/* Styling id work when the cursor hover around it */
 #work a:hover {
     width: 175px;
     height: 150px;
-
-
 }
-
+/* Styling the project-1 class set width and height to 200px */
 .project-1 {
     width: 200px;
     height: 200px;
-
 }
-
+/* Styling the id tag portfolio */
 #portfolio {
     display: flex;
     justify-content: center;
+    flex-direction:column;
+    align-items: center;
     margin: 15px;
-    margin-bottom: 20px;
-
+    margin-bottom: 20px
 }
-
+/* Styling the id tag portfolio a */
 #portfolio a {
     text-decoration: none;
     color: var(--white);
 }
-
-#portfolio a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.Social a {
-    display: flex;
-    flex-direction: column;
+/*----- Styling elements within .Social a tag*/
+.social {
+    display:flexb;
+    flex-direction:column;
     justify-content: center;
     color: var(--white);
     font-size: 40px;
     text-decoration: none;
-    text-align: center;
+    text-align:center;
     margin: 20px;
 }
 
@@ -230,8 +222,10 @@ footer h2 {
     /* Font sixe set is 20px for all element withing the footer  and footer h2 tags */
     color: var(--white);
 }
-
-@media screen and (max-width: 768px) {}
+/* Set to be viewed on various screen and devices */
+@media screen and (max-width: 768px) {
+    
+}
 
 nav {
     flex-direction: column;

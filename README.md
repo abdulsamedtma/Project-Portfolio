@@ -14,9 +14,6 @@ This resource will be helpful to students / beginners learning basics of Softwar
 . Navigate to the top level of the directory.
 . Open the index.html in your broswer.
 
-Top.png
-Middle.png
-Bottom.png
 
 
 ## Usage
