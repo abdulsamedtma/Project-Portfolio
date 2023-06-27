@@ -32,7 +32,6 @@ body {
 
 
 }
-
 /*header*/
 header {
     padding: 20px;
@@ -224,7 +223,7 @@ footer h2 {
 }
 /* Set to be viewed on various screen and devices */
 @media screen and (max-width: 768px) {
-    
+
 }
 
 nav {
